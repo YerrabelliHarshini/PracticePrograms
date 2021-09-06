@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>loops</title>
+
+</head>
+<body>
+    <h3>for-loop concepts</h3>
+</body>
+<script>
+
+    //for each loop 
+    var fruits = ["mango","apple","orange","peach"];
+    //fruits.forEach(function(value,index){})
+     fruits.forEach(function(nut,index){
+       console.log(index);
+      console.log(nut);
+     });
+  
+  
+  
+      // for of loop
+     var fruits = ["mango","apple","orange","peach"];
+     //for(keyword variablename of  arrayName) 
+     for(var test of fruits){
+          console.log("they are",test); //it retrieves only the values
+          // console.log(fruits[test]);  
+      }
+  
+  
+  
+  
+  
+  
+  
+      // for in loop (with arrays)
+      var fruits = ["mango","apple","orange","peach"];
+      for(var demo in fruits){
+       console.log('the for in values are',demo);   //it stores only index
+        console.log(fruits[demo]);  //it stores both index and values
+      }
+  
+  // for in loop (for objects) 
+      var person = {
+          name:'Harshini',
+          age:23,
+          comapany:'Techmehendra'
+      }
+  
+      for(var key in person) {
+          console.log("Key is",key);  //it retrieves the keys
+         
+          //it retrieves both the key and values
+         console.log("value is ",person[key]); 
+      }
+      
+      </script>
+</html>
